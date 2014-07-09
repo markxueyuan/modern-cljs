@@ -14,8 +14,12 @@
             [lein-ring "0.8.8"]]
 
   :cljsbuild {:builds
-              [{:source-paths ["src/cljs"]
-                :compiler {:output-to "resources/public/js/modern.js"
-                           :optimizations :whitespace
-                           :pretty-print true}}]}
+              {:login {:source-paths ["src/cljs/login"]
+                       :compiler {:output-to "resources/public/js/login.js"
+                                  :optimizations :whitespace
+                                  :pretty-print true}}
+               :shopping {:source-paths ["src/cljs/shopping"]
+                          :compiler {:output-to "resources/public/js/shopping.js"
+                                     :optimizations :whitespace
+                                     :pretty-print true}}}}
   :ring {:handler modern-cljs.core/handler})

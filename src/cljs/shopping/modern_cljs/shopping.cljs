@@ -19,6 +19,6 @@
   (if (and js/document
            (.-getElementById js/document))
     (let [theForm (.getElementById js/document "shoppingForm")]
-      (set! (.-onSubmit theForm) calculate))))
+      (set! (.-onsubmit theForm) calculate))))
 
-(set! (.-onLoad js/window) init)
+(set! (.-onload js/window) init)
