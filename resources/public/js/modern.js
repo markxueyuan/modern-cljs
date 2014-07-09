@@ -28822,12 +28822,12 @@ modern_cljs.shopping.init = function init() {
     }
   }())) {
     var theForm = document.getElementById("shoppingForm");
-    return theForm.onSubmit = modern_cljs.shopping.calculate
+    return theForm.onsubmit = modern_cljs.shopping.calculate
   }else {
     return null
   }
 };
-window.onLoad = modern_cljs.shopping.init;
+window.onload = modern_cljs.shopping.init;
 goog.provide("goog.structs.Collection");
 goog.structs.Collection = function() {
 };
