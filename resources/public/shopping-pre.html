@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>购物计算器</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- shopping.html -->
+    <form action="" method="post" id="shoppingForm" novalidate>
+        <legend>采购计算器</legend>
+        <fieldset>
+            <p>用此计算订单总价</p>
+			<div><label for="quantity">数量</label><input type="number" name="quantity" id="quantity" value="1" min="1" required></div>
+			<div><label for="price">单价</label><input type="text" name="price" id="price" value="1.00" required></div>
+			<div><label for="tax">税率（%）</label><input type="text" name="tax" id="tax" value="0.0" required></div>
+			<div><label for="discount">折扣</label><input type="text" name="discount" id="discount" value="0.00" required></div>
+			<div><label for="total">总计</label><input type="text" name="total" id="total" value="0.00"></div>
+			<div><input type="submit" value="计算" id="submit"></div>
+        </fieldset>
+    </form>
+    <script src="js/modern_pre.js"></script>
+    <script>modern_cljs.shopping.init();</script>
+</body>
+</html>
