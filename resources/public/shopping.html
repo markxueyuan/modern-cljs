@@ -10,16 +10,16 @@
 </head>
 <body>
     <!-- shopping.html -->
-    <form action="" method="post" id="shoppingForm" novalidate>
+    <form id="shoppingForm" novalidate>
         <legend>采购计算器</legend>
         <fieldset>
-            <p>用此计算订单总价</p>
+
 			<div><label for="quantity">数量</label><input type="number" name="quantity" id="quantity" value="1" min="1" required></div>
 			<div><label for="price">单价</label><input type="text" name="price" id="price" value="1.00" required></div>
 			<div><label for="tax">税率（%）</label><input type="text" name="tax" id="tax" value="0.0" required></div>
 			<div><label for="discount">折扣</label><input type="text" name="discount" id="discount" value="0.00" required></div>
 			<div><label for="total">总计</label><input type="text" name="total" id="total" value="0.00"></div>
-			<div><input type="submit" value="计算" id="submit"></div>
+			<div><input type="button" value="计算" id="calc"></div>
         </fieldset>
     </form>
     <script src="js/modern.js"></script>
